@@ -44,7 +44,7 @@
    &kp ESC   &kp EXCL  &kp AT    &kp LBRC  &kp RBRC  &kp PIPE    &trans    &trans     &trans     &trans           &trans     &kp PIPE
    &kp LSHFT &kp HASH  &kp DLLR  &kp LPAR  &kp RPAR  &kp GRAVE   &kp PLUS  &kp MINUS  &kp FSLH   &kp KP_MULTIPLY  &kp PRCNT  &kp SQT
    &kp LCTRL &kp PRCNT &kp CARET &kp LBKT  &kp RBKT  &kp TILDE   &kp AMPS  &kp EQUAL  &kp COMMA  &kp DOT          &kp FSLH   &kp MINUS
-                                 &kp ALT   &trans    &trans      &trans    &trans     &kp DEL
+                                 &kp LALT  &trans    &trans      &trans    &trans     &kp DEL
                         >;
                 };
         };
