@@ -48,7 +48,7 @@
       zmk,underglow = &led_strip;
    };
 };
-
+    
 
 / {
 
@@ -57,14 +57,14 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// | RSE/ESC  |  Q  |  W  |  E  |  R  |  T  |   |  Y  |  U   |  I   |  O  |  P  | "|"  |
-// | SHFT/TAB |  A  |  S  |  D  |  F  |  G  |   |  H  |  J   |  K   |  L  |  ;  |  '   |
-// | CTRL     |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,   |  .  |  /  |  -   |
+// | RSE/ESC  |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L   |  U  |   Y  |  ;  | "|"  |
+// | SHFT/TAB |  A  |  R  |  S  |  T  |  D  |   |  H  |  N   |  E   |  I  |  O  |  '   |
+// | CTRL     |  Z  |  X  |  C  |  V  |  B  |   |  K  |  M   |  ,   |  .  |  /  |  -   |
 //                        | GUI | LWR | SPC |   | ENT | LWR  | BKSP |
                         bindings = <
-   &lt RAISE ESC &kp Q    &kp W     &kp E      &kp R      &kp T      &kp Y     &kp U     &kp I     &kp O   &kp P    &kp PIPE
-   &mt LSHFT TAB &kp A    &kp S     &kp D      &kp F      &kp G      &kp H     &kp J     &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LCTRL     &kp Z    &kp X     &kp C      &kp V      &kp B      &kp N     &kp M     &kp COMMA &kp DOT &kp FSLH &kp MINUS
+   &lt RAISE ESC &kp Q    &kp W     &kp F      &kp P      &kp G      &kp J     &kp L     &kp U     &kp Y   &kp SEMI &kp PIPE
+   &mt LSHFT TAB &kp A    &kp R     &kp S      &kp T      &kp D      &kp H     &kp N     &kp E     &kp I   &kp O    &kp SQT
+   &kp LCTRL     &kp Z    &kp X     &kp C      &kp V      &kp B      &kp K     &kp M     &kp COMMA &kp DOT &kp FSLH &kp MINUS
                                     &kp LGUI   &mo LOWER  &kp SPACE  &kp RET   &mo LOWER &kp BSPC
                         >;
 
