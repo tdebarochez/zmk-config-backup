@@ -86,15 +86,15 @@
                 
                 raise_layer {
 // -----------------------------------------------------------------------------------------
-// |  |  1  |  2   |  3   |  4   |  5    |   |  6    |  7     |  8     |  9     |  0     |  |
-// |  |     | Prev | Play | Next | VolUp |   | PG_UP | LFT    | DWN    |  UP    | RGT    |  |
-// |  |     |      |      | Mute | VolDn |   | PG_DN | BT_PRV | BT_SEL | BT_NXT | BT_CLR |  |
-//                 |      |      |       |   |       |        |        |
+// |  |  1  |  2   |  3   |  4   |  5    |   |  6    |  7  |  8     |  9     |  0     |  |
+// |  |     | Prev | Play | Next | VolUp |   | PG_UP | LFT | DWN    |  UP    | RGT    |  |
+// |  |     |      |      | Mute | VolDn |   | PG_DN |     | BT_PRV | BT_NXT | BT_CLR |  |
+//                 |      |      |       |   |       |     |        |
                         bindings = <
-   &trans  &kp N1 &kp N2         &kp N3           &kp N4     &kp N5            &kp N6      &kp N7     &kp N8      &kp N9     &kp N0     &trans
-   &trans  &trans &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP   &kp PG_UP   &kp LEFT   &kp DOWN    &kp UP     &kp RIGHT  &trans
-   &trans  &trans &trans         &trans           &kp C_MUTE &kp C_VOLUME_DOWN &kp PG_DN   &bt BT_PRV &bt BT_SEL  &bt BT_NXT &bt BT_CLR &trans
-                                 &trans           &trans     &trans            &trans      &trans   &trans
+   &trans  &kp N1 &kp N2         &kp N3           &kp N4     &kp N5            &kp N6      &kp N7    &kp N8      &kp N9     &kp N0     &trans
+   &trans  &trans &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP   &kp PG_UP   &kp LEFT  &kp DOWN    &kp UP     &kp RIGHT  &trans
+   &trans  &trans &trans         &trans           &kp C_MUTE &kp C_VOLUME_DOWN &kp PG_DN   &trans    &bt BT_PRV  &bt BT_NXT &bt BT_CLR &trans
+                                 &trans           &trans     &trans            &trans      &trans    &trans
                         >;
                 };
 
