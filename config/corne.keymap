@@ -9,11 +9,14 @@
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/rgb.h>
 #include <dt-bindings/zmk/ext_power.h>
+#include "keymap_french_osx.h"
 
 #define DEFAULT 0
 #define LOWER   1
 #define RAISE   2
 #define ADJUST  3
+
+#define _DK_GRAVE LS(_DK_ACUTE)  //
 
 &mt {
     tapping-term-ms = <400>;
@@ -72,15 +75,15 @@
                 };
                 lower_layer {
 // -----------------------------------------------------------------------------------------
-// | ADJUST   |  !  |  @  |  {  |  }  |  |  |   |     |     |     |     |     |  \  |
+// | ADJUST   |  !  |  @  |  {  |  }  |  |  |   |  ¨  |  ´  |     |     |     |  \  |
 // | SHFT/TAB |  #  |  $  |  (  |  )  |  `  |   |  +  |  -  |  /  |  *  |  %  |  '  |
 // | CTRL     |  %  |  ^  |  [  |  ]  |  ~  |   |  &  |  =  |  ,  |  .  |  /  |  -  |
 //                        | ALT |     |     |   |     |     | DEL |
                         bindings = <
-   &mo ADJUST &kp EXCL  &kp AT    &kp LBRC  &kp RBRC  &kp PIPE        &trans    &trans     &trans     &trans           &trans     &kp BACKSLASH
-   &kp LSHFT  &kp HASH  &kp DLLR  &kp LPAR  &kp RPAR  &kp GRAVE       &kp PLUS  &kp MINUS  &kp FSLH   &kp KP_MULTIPLY  &kp PRCNT  &kp SQT
-   &kp LCTRL  &kp PRCNT &kp CARET &kp LBKT  &kp RBKT  &kp NON_US_HASH &kp AMPS  &kp EQUAL  &kp COMMA  &kp DOT          &kp FSLH   &kp MINUS
-                                  &kp LALT  &trans    &trans          &trans    &trans     &kp DEL
+   &mo ADJUST &kp EXCL  &kp AT      &kp LBRC  &kp RBRC  &kp PIPE        &kp FR_DIAE &kp FR_ACUT &trans     &trans           &trans     &kp BACKSLASH
+   &kp LSHFT  &kp HASH  &kp DLLR    &kp LPAR  &kp RPAR  &kp FR_GRV      &kp PLUS    &kp MINUS   &kp FSLH   &kp KP_MULTIPLY  &kp PRCNT  &kp SQT
+   &kp LCTRL  &kp PRCNT &kp FR_CIRC &kp LBKT  &kp RBKT  &kp FR_TILD     &kp AMPS    &kp EQUAL   &kp COMMA  &kp DOT          &kp FSLH   &kp MINUS
+                                    &kp LALT  &trans    &trans          &trans      &trans      &kp DEL
                         >;
                 };
                 
