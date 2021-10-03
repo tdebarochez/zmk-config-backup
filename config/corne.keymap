@@ -59,7 +59,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
-                        label = "default"
+                        label = "default";
 // -----------------------------------------------------------------------------------------
 // | RSE/ESC  |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L   |  U   |  Y  |  ;  |  \   |
 // | SHFT/TAB |  A  |  R  |  S  |  T  |  D  |   |  H  |  N   |  E   |  I  |  O  |  '   |
@@ -74,7 +74,7 @@
 
                 };
                 lower_layer {
-                        label = "lower"
+                        label = "lower";
 // -----------------------------------------------------------------------------------------
 // | ADJUST   |  !  |  @  |  {  |  }  |  |  |   |  ¨  |  ´  |  ^  |  `  |     |  \  |
 // | SHFT/TAB |  #  |  $  |  (  |  )  |  `  |   |  +  |  -  |  /  |  *  |  %  |  '  |
@@ -89,7 +89,7 @@
                 };
                 
                 raise_layer {
-                        label = "raise"
+                        label = "raise";
 // -----------------------------------------------------------------------------------------
 // |  |  1  |  2   |  3   |  4   |  5    |   |  6    |  7  |  8     |  9     |  0     |  |
 // |  |     | Prev | Play | Next | VolUp |   | PG_UP | LFT | DWN    |  UP    | RGT    |  |
@@ -104,7 +104,7 @@
                 };
 
                 adjust_layer {
-                        label = "adjust"
+                        label = "adjust";
 // -----------------------------------------------------------------------------------------
 // |  | F1      | F2      | F3      | F4      | F5      |   | F6      | F7      | F8      | F9      | F10     | F11 |
 // |  | RGB_TOG | RGB_SAI | RGB_HUI | RGB_BRI | RGB_EFF |   | RGB_TOG | RGB_SAI | RGB_HUI | RGB_BRI | RGB_EFF | F12 |
