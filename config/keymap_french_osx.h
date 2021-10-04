@@ -80,7 +80,7 @@
  * └─────┴────┴─────┴───────────────────────┴─────┴────┴─────┘
  */
 // Row 1
-#define FR_AT   NON_US_HASH   // @
+#define FR_AT   AT    // @
 #define FR_AMPS N1    // &
 #define FR_LEAC N2    // é
 #define FR_DQUO N3    // "
