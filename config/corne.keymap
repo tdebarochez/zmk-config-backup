@@ -94,15 +94,15 @@
                 raise_layer {
                         label = "raise";
 // -----------------------------------------------------------------------------------------
-// |  |  1  |  2   |  3   |  4   |  5    |   |  6    |  7  |  8     |  9     |  0     |  |
-// |  |     | Prev | Play | Next | VolUp |   | PG_UP | LFT | DWN    |  UP    | RGT    |  |
-// |  |     |      |      | Mute | VolDn |   | PG_DN |     | BT_PRV | BT_NXT | BT_CLR |  |
-//                 |      |      |       |   |       |     |        |
+// |  |  &/1  |  é/2   |  "/3   |  '/4   |  (/5    |   |  §/6    |  è/7  |  !/8     |  ç/9     |  à/0   | )/° |
+// |  |       | Prev   | Play   | Next   | VolUp   |   | PG_UP   | LFT   | DWN      |  UP      | RGT    |     |
+// |  |       |        |        | Mute   | VolDn   |   | PG_DN   |       | BT_PRV   | BT_NXT   | BT_CLR |     |
+//                     |        |        |         |   |         |       |          |
                         bindings = <
-   &none  &kp FR_1 &kp FR_2         &kp FR_3           &kp FR_4     &kp FR_5            &kp FR_6      &kp FR_7    &kp FR_8      &kp FR_9     &kp FR_0     &none
-   &none  &none &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP   &kp PG_UP   &kp LEFT  &kp DOWN    &kp UP     &kp RIGHT  &none
-   &none  &none &none         &none           &kp C_MUTE &kp C_VOLUME_DOWN &kp PG_DN   &none    &bt BT_PRV  &bt BT_NXT &bt BT_CLR &none
-                                 &none           &none     &none            &none      &none    &none
+   &none  &kp FR_AMPS &kp FR_LEAC    &kp FR_DQUO      &kp FR_QUOT  &kp FR_LPAR        &kp FR_SECT  &kp FR_LEGR  &kp FR_EXLM  &kp FR_LCCE &kp FR_LAGR &kp FR_RPAR
+   &none  &none       &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT   &kp C_VOLUME_UP    &kp PG_UP    &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT   &none
+   &none  &none       &none          &none            &kp C_MUTE   &kp C_VOLUME_DOWN  &kp PG_DN    &none        &bt BT_PRV   &bt BT_NXT  &bt BT_CLR &none
+                                     &none            &none        &none              &none        &none        &none
                         >;
                 };
 
