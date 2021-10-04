@@ -26,7 +26,7 @@
 #define FR_LCCE N9    // ç
 #define FR_LAGR N0    // à
 #define FR_RPRN MINUS // )
-#define FR_MINS EQUAL  // -
+#define FR_MINUS EQUAL  // -
 // Row 2
 #define FR_A    Q    // A
 #define FR_Z    W    // Z
@@ -39,7 +39,7 @@
 #define FR_O    O    // O
 #define FR_P    P    // P
 #define FR_CIRC LEFT_BRACKET // ^
-#define FR_DLR  RIGHT_BRACKET // $
+#define FR_DLLR  RIGHT_BRACKET // $
 // Row 3
 #define FR_Q    A    // Q
 #define FR_S    S    // S
@@ -64,7 +64,7 @@
 #define FR_COMM M    // ,
 #define FR_SCLN COMMA // ;
 #define FR_COLN DOT  // :
-#define FR_EQL  SLASH // =
+#define FR_EQUAL  SLASH // =
 
 /* Shifted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐
@@ -81,17 +81,17 @@
  */
 // Row 1
 #define FR_AT   NON_US_HASH   // @
-#define FR_AMPR N1    // &
+#define FR_AMPS N1    // &
 #define FR_LEAC N2    // é
 #define FR_DQUO N3    // "
 #define FR_QUOT N4    // '
-#define FR_LPRN N5    // (
+#define FR_LPAR N5    // (
 #define FR_SECT N6    // §
 #define FR_LEGR N7    // è
 #define FR_EXLM N8    // !
 #define FR_LCCE N9    // ç
 #define FR_LAGR N0    // à
-#define FR_RPRN MINUS // )
+#define FR_RPAR MINUS // )
 #define FR_MINS EQUAL  // -
 
 #define FR_HASH LS(FR_AT) // #
@@ -111,7 +111,7 @@
 #define FR_DIAE LS(FR_CIRC) // ¨ (dead)
 #define FR_ASTR LS(FR_DLR)  // *
 // Row 3
-#define FR_PERC LS(FR_LUGR) // %
+#define FR_PRCNT LS(FR_LUGR) // %
 #define FR_PND  LS(FR_GRV)  // £
 // Row 4
 #define FR_RABK LS(FR_LABK) // >
@@ -139,13 +139,13 @@
 #define FR_LEDI LA(FR_LEAC) // ë
 #define FR_LDQU LA(FR_DQUO) // “
 #define FR_LSQU LA(FR_QUOT) // ‘
-#define FR_LCBR LA(FR_LPRN) // {
+#define FR_LBRC LA(FR_LPRN) // {
 #define FR_PILC LA(FR_SECT) // ¶
 #define FR_LDAQ LA(FR_LEGR) // «
 #define FR_IEXL LA(FR_EXLM) // ¡
 #define FR_CCCE LA(FR_LCCE) // Ç
 #define FR_OSTR LA(FR_LAGR) // Ø
-#define FR_RCBR LA(FR_RPRN) // }
+#define FR_RBRC LA(FR_RPRN) // }
 #define FR_MDSH LA(FR_MINS) // —
 // Row 2
 #define FR_AE   LA(FR_A)    // Æ
@@ -202,12 +202,12 @@
 #define FR_CYDI LS(LA(FR_AT))   // Ÿ
 #define FR_ACUT LS(LA(FR_AMPR)) // ´ (dead)
 #define FR_DLQU LS(LA(FR_LEAC)) // „
-#define FR_LBRC LS(LA(FR_LPRN)) // [
+#define FR_LBKT LS(LA(FR_LPRN)) // [
 #define FR_LARI LS(LA(FR_SECT)) // å
 #define FR_RDAQ LS(LA(FR_LEGR)) // »
 #define FR_CUCI LS(LA(FR_EXLM)) // Û
 #define FR_CAAC LS(LA(FR_LCCE)) // Á
-#define FR_RBRC LS(LA(FR_RPRN)) // ]
+#define FR_RBKT LS(LA(FR_RPRN)) // ]
 #define FR_NDSH LS(LA(FR_MINS)) // –
 // Row 2
 #define FR_CARI LS(LA(FR_Z))    // Å
