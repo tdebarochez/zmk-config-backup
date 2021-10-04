@@ -54,6 +54,43 @@
 
 
 / {
+        behaviors {
+                comma: cmlk_comma {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "COLEMAK_COMMA";
+                        #binding-cells = <0>;
+                        bindings = <&kp FR_COMM>, <&kp FR_LABK>;
+                        mods = <(MOD_LSFT)>;
+                };
+                dot: cmlk_dot {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "COLEMAK_DOT";
+                        #binding-cells = <0>;
+                        bindings = <&kp FR_DOT>, <&kp FR_RABK>;
+                        mods = <(MOD_LSFT)>;
+                };
+                slash: cmlk_slash {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "COLEMAK_SLASH";
+                        #binding-cells = <0>;
+                        bindings = <&kp FR_SLSH>, <&kp FR_QUES>;
+                        mods = <(MOD_LSFT)>;
+                };
+                quote: cmlk_quote {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "COLEMAK_QUOTE";
+                        #binding-cells = <0>;
+                        bindings = <&kp FR_QUOT>, <&kp FR_DQUO>;
+                        mods = <(MOD_LSFT)>;
+                };
+                semicol: cmlk_semicol {
+                        compatible = "zmk,behavior-mod-morph";
+                        label = "COLEMAK_SEMICOL";
+                        #binding-cells = <0>;
+                        bindings = <&kp FR_SCLN>, <&kp FR_COLN>;
+                        mods = <(MOD_LSFT)>;
+                };
+        };
 
         keymap {
                 compatible = "zmk,keymap";
@@ -67,8 +104,8 @@
 //                        | GUI | ALT | SPC |   | ENT | LWR  | BKSP |
                         bindings = <
    &lt RAISE ESC &kp FR_Q    &kp FR_W     &kp FR_F      &kp FR_P      &kp FR_G      &kp FR_J   &kp FR_L     &kp FR_U     &kp FR_Y   &kp FR_SCLN &kp FR_BSLS
-   &mt LSHFT TAB &kp FR_A    &kp FR_R     &kp FR_S      &kp FR_T      &kp FR_D      &kp FR_H   &kp FR_N     &kp FR_E     &kp FR_I   &kp FR_O    &kp FR_QUOT
-   &kp LCTRL     &kp FR_Z    &kp FR_X     &kp FR_C      &kp FR_V      &kp FR_B      &kp FR_K   &kp FR_M     &kp FR_COMM  &kp FR_DOT &kp FR_SLSH &kp FR_MINS
+   &mt LSHFT TAB &kp FR_A    &kp FR_R     &kp FR_S      &kp FR_T      &kp FR_D      &kp FR_H   &kp FR_N     &kp FR_E     &kp FR_I   &kp FR_O    &quote
+   &kp LCTRL     &kp FR_Z    &kp FR_X     &kp FR_C      &kp FR_V      &kp FR_B      &kp FR_K   &kp FR_M     &comma       &dot       &slash      &kp FR_MINS
                                           &kp LGUI      &kp LALT      &kp SPACE     &kp RET    &mo LOWER    &kp BSPC
                         >;
 
