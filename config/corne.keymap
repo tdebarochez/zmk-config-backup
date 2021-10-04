@@ -59,14 +59,14 @@
                         compatible = "zmk,behavior-mod-morph";
                         label = "COLEMAK_COMMA";
                         #binding-cells = <0>;
-                        bindings = <&kp FR_COMM>, <&kp FR_LABK>;
+                        bindings = <&kp FR_COMM>, <&kp LESS_THAN>;
                         mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
                 };
                 dot: cmlk_dot {
                         compatible = "zmk,behavior-mod-morph";
                         label = "COLEMAK_DOT";
                         #binding-cells = <0>;
-                        bindings = <&kp FR_DOT>, <&kp FR_RABK>;
+                        bindings = <&kp FR_DOT>, <&kp PERIOD>;
                         mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
                 };
                 slash: cmlk_slash {
@@ -104,7 +104,7 @@
 
                 default_layer {
                         label = "default";
-// errors : 
+// errors : shift + ;',.
 // -----------------------------------------------------------------------------------------
 // | RSE/ESC  |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L   |  U   |  Y  |  ;  |  \   |
 // | SHFT/TAB |  A  |  R  |  S  |  T  |  D  |   |  H  |  N   |  E   |  I  |  O  |  '   |
@@ -121,7 +121,7 @@
                 lower_layer {
                         label = "lower";
 
-// error @ #
+// ;/\|
 
 // -----------------------------------------------------------------------------------------
 // | ADJUST   |  !  |  @  |  {  |  }  |  |  |   |  ¨  |  ´  |  ^  |  `  |     |     |
