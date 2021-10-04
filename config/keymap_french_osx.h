@@ -109,7 +109,7 @@
 #define FR_UNDS LS(FR_MINS) // _
 // Row 2
 #define FR_DIAE LS(FR_CIRC) // ¨ (dead)
-#define FR_ASTR LS(FR_DLR)  // *
+#define FR_ASTR LS(FR_DLLR)  // *
 // Row 3
 #define FR_PRCNT LS(FR_LUGR) // %
 #define FR_PND  LS(FR_GRV)  // £
@@ -118,7 +118,7 @@
 #define FR_QUES LS(FR_COMM) // ?
 #define FR_DOT  LS(FR_SCLN) // .
 #define FR_SLSH LS(FR_COLN) // /
-#define FR_PLUS LS(FR_EQL)  // +
+#define FR_PLUS LS(FR_EQUAL)  // +
 
 /* Alted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐
@@ -159,7 +159,7 @@
 #define FR_OE   LA(FR_O)    // Œ
 #define FR_PI   LA(FR_P)    // π
 #define FR_OCIR LA(FR_CIRC) // Ô
-#define FR_EURO LA(FR_DLR)  // €
+#define FR_EURO LA(FR_DLLR)  // €
 // Row 3
 #define FR_DDAG LA(FR_Q)    // ‡
 #define FR_COGR LA(FR_S)    // Ò
@@ -183,7 +183,7 @@
 #define FR_INFN LA(FR_COMM) // ∞
 #define FR_ELLP LA(FR_SCLN) // …
 #define FR_DIV  LA(FR_COLN) // ÷
-#define FR_NEQL LA(FR_EQL)  // ≠
+#define FR_NEQL LA(FR_EQUAL)  // ≠
 
 /* Shift+Alted symbols
  * ┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬─────┐
@@ -216,7 +216,7 @@
 #define FR_FORD LS(LA(FR_U))    // ª
 #define FR_LIDI LS(LA(FR_I))    // ï
 #define FR_NARP LS(LA(FR_P))    // ∏
-#define FR_YEN  LS(LA(FR_DLR))  // ¥
+#define FR_YEN  LS(LA(FR_DLLR))  // ¥
 // Row 3
 #define FR_OMEG LS(LA(FR_Q))    // Ω
 #define FR_NARS LS(LA(FR_S))    // ∑
@@ -239,4 +239,4 @@
 #define FR_DLSI LS(LA(FR_N))    // ı
 #define FR_IQUE LS(LA(FR_COMM)) // ¿
 #define FR_BSLS LS(LA(FR_COLN)) // (backslash)
-#define FR_PLMN LS(LA(FR_EQL))  // ±
+#define FR_PLMN LS(LA(FR_EQUAL))  // ±
