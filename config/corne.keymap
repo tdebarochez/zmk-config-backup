@@ -54,50 +54,6 @@
 
 
 / {
-        behaviors {
-                comma: cmlk_comma {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "COLEMAK_COMMA";
-                        #binding-cells = <0>;
-                        bindings = <&kp FR_COMM>, <&kp FR_LABK>;
-                        mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-                };
-                dot: cmlk_dot {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "COLEMAK_DOT";
-                        #binding-cells = <0>;
-                        bindings = <&kp FR_DOT>, <&kp FR_RABK>;
-                        mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-                };
-                slash: cmlk_slash {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "COLEMAK_SLASH";
-                        #binding-cells = <0>;
-                        bindings = <&kp FR_SLSH>, <&kp FR_QUES>;
-                        mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-                };
-                quote: cmlk_quote {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "COLEMAK_QUOTE";
-                        #binding-cells = <0>;
-                        bindings = <&kp FR_QUOT>, <&kp FR_DQUO>;
-                        mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-                };
-                semicol: cmlk_semicol {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "COLEMAK_SEMICOL";
-                        #binding-cells = <0>;
-                        bindings = <&kp FR_SCLN>, <&kp FR_COLN>;
-                        mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-                };
-                blsl: cmlk_blsl {
-                        compatible = "zmk,behavior-mod-morph";
-                        label = "COLEMAK_BLSL";
-                        #binding-cells = <0>;
-                        bindings = <&kp FR_BSLS>, <&kp FR_PIPE>;
-                        mods = <(MOD_LGUI|MOD_LSFT|MOD_RGUI|MOD_RSFT)>;
-                };
-        };
 
         keymap {
                 compatible = "zmk,keymap";
@@ -111,9 +67,9 @@
 // | CTRL     |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,   |  .  |  /  |  -   |
 //                        | GUI | ALT | SPC |   | ENT | LWR  | BKSP |
                         bindings = <
-   &lt RAISE ESC &kp FR_Q    &kp FR_W     &kp FR_F      &kp FR_P      &kp FR_G      &kp FR_J   &kp FR_L     &kp FR_U     &kp FR_Y   &semicol    &blsl
-   &mt LSHFT TAB &kp FR_A    &kp FR_R     &kp FR_S      &kp FR_T      &kp FR_D      &kp FR_H   &kp FR_N     &kp FR_E     &kp FR_I   &kp FR_O    &quote
-   &kp LCTRL     &kp FR_Z    &kp FR_X     &kp FR_C      &kp FR_V      &kp FR_B      &kp FR_K   &kp FR_M     &comma       &dot       &slash      &kp FR_MINUS
+   &lt RAISE ESC &kp FR_Q    &kp FR_W     &kp FR_F      &kp FR_P      &kp FR_G      &kp FR_J   &kp FR_L     &kp FR_U     &kp FR_Y   &kp FR_SCLN &kp FR_BSLS
+   &mt LSHFT TAB &kp FR_A    &kp FR_R     &kp FR_S      &kp FR_T      &kp FR_D      &kp FR_H   &kp FR_N     &kp FR_E     &kp FR_I   &kp FR_O    &kp FR_QUOT
+   &kp LCTRL     &kp FR_Z    &kp FR_X     &kp FR_C      &kp FR_V      &kp FR_B      &kp FR_K   &kp FR_M     &kp FR_COMM  &kp FR_DOT &kp FR_SLSH &kp FR_MINUS
                                           &kp LGUI      &kp LALT      &kp SPACE     &kp RET    &mo LOWER    &kp BSPC
                         >;
 
@@ -123,14 +79,14 @@
 
 
 // -----------------------------------------------------------------------------------------
-// | ADJUST   |  !  |  @  |  {  |  }  |  |  |   |  ¨  |  ´  |  ^  |  `  |     |     |
-// | SHFT/TAB |  #  |  $  |  (  |  )  |  `  |   |  +  |  -  |  /  |  *  |  %  |     |
-// | CTRL     |  %  |  ^  |  [  |  ]  |  ~  |   |  &  |  =  |     |     |     |     |
+// | ADJUST   |  !  |  @  |  {  |  }  |  |  |   |  ¨  |  ´  |  ^  |  `  |  :  |  |  |
+// | SHFT/TAB |  #  |  $  |  (  |  )  |  `  |   |  +  |  -  |  /  |  *  |  %  |  "  |
+// | CTRL     |  %  |  ^  |  [  |  ]  |  ~  |   |  &  |  =  |  <  |  >  |  ?  |  _  |
 //                        | ALT |     |     |   |     |     | DEL |
                         bindings = <
-   &mo ADJUST &kp FR_EXLM &kp FR_AT   &kp FR_LBRC  &kp FR_RBRC  &kp FR_PIPE        &kp FR_DIAE &kp FR_ACUT &kp FR_CIRC &kp FR_GRV      &none     &none
-   &kp LSHFT  &kp FR_HASH    &kp FR_DLLR    &kp FR_LPAR  &kp FR_RPAR  &kp FR_GRV      &kp FR_PLUS    &kp FR_MINUS   &kp FR_SLSH    &kp FR_ASTR &kp FR_PRCNT  &none
-   &kp LCTRL  &kp FR_PRCNT   &kp FR_CIRC &kp FR_LBKT  &kp FR_RBKT  &kp FR_TILD     &kp FR_AMPS    &kp FR_EQUAL   &kp FR_LABK    &kp FR_RABK          &none      &none
+   &mo ADJUST &kp FR_EXLM  &kp FR_AT   &kp FR_LBRC  &kp FR_RBRC  &kp FR_PIPE     &kp FR_DIAE &kp FR_ACUT  &kp FR_CIRC &kp FR_GRV  &kp FR_COLN  &kp FR_PIPE
+   &kp LSHFT  &kp FR_HASH  &kp FR_DLLR &kp FR_LPAR  &kp FR_RPAR  &kp FR_GRV      &kp FR_PLUS &kp FR_MINUS &kp FR_SLSH &kp FR_ASTR &kp FR_PRCNT &kp FR_DQUO
+   &kp LCTRL  &kp FR_PRCNT &kp FR_CIRC &kp FR_LBKT  &kp FR_RBKT  &kp FR_TILD     &kp FR_AMPS &kp FR_EQUAL &kp FR_LABK &kp FR_RABK &kp FR_QUES  &kp FR_UNDS
                                     &kp LALT  &none    &none          &none      &none      &kp DEL
                         >;
                 };
