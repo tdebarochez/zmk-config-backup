@@ -54,7 +54,7 @@
 #define FR_LUGR SINGLE_QUOTE // ù
 #define FR_GRV  BACKSLASH // `
 // Row 4
-#define FR_LABK NON_US_HASH // <
+#define FR_LABK NON_US_BACKSLASH // <
 #define FR_W    Z    // W
 #define FR_X    X    // X
 #define FR_C    C    // C
