@@ -104,6 +104,7 @@
 
                 default_layer {
                         label = "default";
+// errors : 
 // -----------------------------------------------------------------------------------------
 // | RSE/ESC  |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L   |  U   |  Y  |  ;  |  \   |
 // | SHFT/TAB |  A  |  R  |  S  |  T  |  D  |   |  H  |  N   |  E   |  I  |  O  |  '   |
@@ -119,16 +120,19 @@
                 };
                 lower_layer {
                         label = "lower";
+
+// error @ # 
+
 // -----------------------------------------------------------------------------------------
 // | ADJUST   |  !  |  @  |  {  |  }  |  |  |   |  ¨  |  ´  |  ^  |  `  |     |     |
 // | SHFT/TAB |  #  |  $  |  (  |  )  |  `  |   |  +  |  -  |  /  |  *  |  %  |     |
 // | CTRL     |  %  |  ^  |  [  |  ]  |  ~  |   |  &  |  =  |     |     |     |     |
 //                        | ALT |     |     |   |     |     | DEL |
                         bindings = <
-   &mo ADJUST &kp FR_EXLM &kp FR_AT   &kp FR_LBRC  &kp FR_RBRC  &kp FR_PIPE        &kp FR_DIAE &kp FR_ACUT &kp FR_CIRC &kp FR_GRV      &trans     &trans
-   &kp LSHFT  &kp FR_HASH    &kp FR_DLLR    &kp FR_LPAR  &kp FR_RPAR  &kp FR_GRV      &kp FR_PLUS    &kp FR_MINUS   &kp FR_SLSH    &kp FR_ASTR &kp FR_PRCNT  &trans
-   &kp LCTRL  &kp FR_PRCNT   &kp FR_CIRC &kp FR_LBKT  &kp FR_RBKT  &kp FR_TILD     &kp FR_AMPS    &kp FR_EQUAL   &trans    &trans          &trans      &trans
-                                    &kp LALT  &trans    &trans          &trans      &trans      &kp DEL
+   &mo ADJUST &kp FR_EXLM &kp FR_AT   &kp FR_LBRC  &kp FR_RBRC  &kp FR_PIPE        &kp FR_DIAE &kp FR_ACUT &kp FR_CIRC &kp FR_GRV      &none     &none
+   &kp LSHFT  &kp FR_HASH    &kp FR_DLLR    &kp FR_LPAR  &kp FR_RPAR  &kp FR_GRV      &kp FR_PLUS    &kp FR_MINUS   &kp FR_SLSH    &kp FR_ASTR &kp FR_PRCNT  &none
+   &kp LCTRL  &kp FR_PRCNT   &kp FR_CIRC &kp FR_LBKT  &kp FR_RBKT  &kp FR_TILD     &kp FR_AMPS    &kp FR_EQUAL   &none    &none          &none      &none
+                                    &kp LALT  &none    &none          &none      &none      &kp DEL
                         >;
                 };
                 
@@ -140,10 +144,10 @@
 // |  |     |      |      | Mute | VolDn |   | PG_DN |     | BT_PRV | BT_NXT | BT_CLR |  |
 //                 |      |      |       |   |       |     |        |
                         bindings = <
-   &trans  &kp FR_1 &kp FR_2         &kp FR_3           &kp FR_4     &kp FR_5            &kp FR_6      &kp FR_7    &kp FR_8      &kp FR_9     &kp FR_0     &trans
-   &trans  &trans &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP   &kp PG_UP   &kp LEFT  &kp DOWN    &kp UP     &kp RIGHT  &trans
-   &trans  &trans &trans         &trans           &kp C_MUTE &kp C_VOLUME_DOWN &kp PG_DN   &trans    &bt BT_PRV  &bt BT_NXT &bt BT_CLR &trans
-                                 &trans           &trans     &trans            &trans      &trans    &trans
+   &none  &kp FR_1 &kp FR_2         &kp FR_3           &kp FR_4     &kp FR_5            &kp FR_6      &kp FR_7    &kp FR_8      &kp FR_9     &kp FR_0     &none
+   &none  &none &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT &kp C_VOLUME_UP   &kp PG_UP   &kp LEFT  &kp DOWN    &kp UP     &kp RIGHT  &none
+   &none  &none &none         &none           &kp C_MUTE &kp C_VOLUME_DOWN &kp PG_DN   &none    &bt BT_PRV  &bt BT_NXT &bt BT_CLR &none
+                                 &none           &none     &none            &none      &none    &none
                         >;
                 };
 
@@ -155,10 +159,10 @@
 // |  |         | RGB_SAD | RGB_HUD | RGB_BRD | RGB_EFR |   |         | RGB_SAD | RGB_HUD | RGB_BRD | RGB_EFR |     |
 //                        |         |         |         |   |         |         |         |
                         bindings = <
-   &trans  &kp F1          &kp F2          &kp F3          &kp F4          &kp F5           &kp F6          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11
-   &trans  &ext_power EP_TOG &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRI &rgb_ug RGB_EFF  &rgb_ug RGB_TOG &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRI &rgb_ug RGB_EFF &kp F12
-   &trans  &trans          &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_BRD &rgb_ug RGB_EFR  &trans          &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_BRD &rgb_ug RGB_EFR &trans
-                                           &trans          &trans          &trans           &trans          &trans          &trans
+   &none  &kp F1          &kp F2          &kp F3          &kp F4          &kp F5           &kp F6          &kp F7          &kp F8          &kp F9          &kp F10         &kp F11
+   &none  &ext_power EP_TOG &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRI &rgb_ug RGB_EFF  &rgb_ug RGB_TOG &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRI &rgb_ug RGB_EFF &kp F12
+   &none  &none          &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_BRD &rgb_ug RGB_EFR  &none          &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_BRD &rgb_ug RGB_EFR &none
+                                           &none          &none          &none           &none          &none          &none
                         >;
                 };
         };
