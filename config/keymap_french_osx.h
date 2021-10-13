@@ -14,19 +14,20 @@
  * └─────┴────┴─────┴───────────────────────┴─────┴────┴─────┘
  */
 // Row 1
-//#define FR_AT   NON_US_HASH   // @
-#define FR_AMPR N1    // &
+#define FR_AT   NON_US_BACKSLASH    // @
+#define FR_AMPS N1    // &
 #define FR_LEAC N2    // é
 #define FR_DQUO N3    // "
 #define FR_QUOT N4    // '
-#define FR_LPRN N5    // (
+#define FR_LPAR N5    // (
 #define FR_SECT N6    // §
 #define FR_LEGR N7    // è
 #define FR_EXLM N8    // !
 #define FR_LCCE N9    // ç
 #define FR_LAGR N0    // à
-#define FR_RPRN MINUS // )
+#define FR_RPAR MINUS // )
 #define FR_MINUS EQUAL  // -
+
 // Row 2
 #define FR_A    Q    // A
 #define FR_Z    W    // Z
@@ -40,6 +41,7 @@
 #define FR_P    P    // P
 #define FR_CIRC LEFT_BRACKET // ^
 #define FR_DLLR  RIGHT_BRACKET // $
+
 // Row 3
 #define FR_Q    A    // Q
 #define FR_S    S    // S
@@ -53,8 +55,9 @@
 #define FR_M    SEMICOLON // M
 #define FR_LUGR SINGLE_QUOTE // ù
 #define FR_GRV  BACKSLASH // `
+
 // Row 4
-#define FR_LABK NON_US_BACKSLASH // <
+#define FR_LABK NON_US_HASH // <
 #define FR_W    Z    // W
 #define FR_X    X    // X
 #define FR_C    C    // C
@@ -80,19 +83,6 @@
  * └─────┴────┴─────┴───────────────────────┴─────┴────┴─────┘
  */
 // Row 1
-#define FR_AT   GRAVE    // @
-#define FR_AMPS N1    // &
-#define FR_LEAC N2    // é
-#define FR_DQUO N3    // "
-#define FR_QUOT N4    // '
-#define FR_LPAR N5    // (
-#define FR_SECT N6    // §
-#define FR_LEGR N7    // è
-#define FR_EXLM N8    // !
-#define FR_LCCE N9    // ç
-#define FR_LAGR N0    // à
-#define FR_RPAR MINUS // )
-#define FR_MINS EQUAL  // -
 
 #define FR_HASH LS(FR_AT) // #
 #define FR_1    LS(FR_AMPR) // 1
