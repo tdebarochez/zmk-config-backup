@@ -85,18 +85,18 @@
 // Row 1
 
 #define FR_HASH LS(FR_AT) // #
-#define FR_1    LS(FR_AMPR) // 1
+#define FR_1    LS(FR_AMPS) // 1
 #define FR_2    LS(FR_LEAC) // 2
 #define FR_3    LS(FR_DQUO) // 3
 #define FR_4    LS(FR_QUOT) // 4
-#define FR_5    LS(FR_LPRN) // 5
+#define FR_5    LS(FR_LPAR) // 5
 #define FR_6    LS(FR_SECT) // 6
 #define FR_7    LS(FR_LEGR) // 7
 #define FR_8    LS(FR_EXLM) // 8
 #define FR_9    LS(FR_LCCE) // 9
 #define FR_0    LS(FR_LAGR) // 0
-#define FR_DEG  LS(FR_RPRN) // °
-#define FR_UNDS LS(FR_MINS) // _
+#define FR_DEG  LS(FR_RPAR) // °
+#define FR_UNDS LS(FR_MINUS) // _
 // Row 2
 #define FR_DIAE LS(FR_CIRC) // ¨ (dead)
 #define FR_ASTR LS(FR_DLLR)  // *
@@ -125,18 +125,18 @@
  */
 // Row 1
 #define FR_BULT LA(FR_AT)   // •
-#define FR_APPL LA(FR_AMPR) //  (Apple logo)
+#define FR_APPL LA(FR_AMPS) //  (Apple logo)
 #define FR_LEDI LA(FR_LEAC) // ë
 #define FR_LDQU LA(FR_DQUO) // “
 #define FR_LSQU LA(FR_QUOT) // ‘
-#define FR_LBRC LA(FR_LPRN) // {
+#define FR_LBRC LA(FR_LPAR) // {
 #define FR_PILC LA(FR_SECT) // ¶
 #define FR_LDAQ LA(FR_LEGR) // «
 #define FR_IEXL LA(FR_EXLM) // ¡
 #define FR_CCCE LA(FR_LCCE) // Ç
 #define FR_OSTR LA(FR_LAGR) // Ø
-#define FR_RBRC LA(FR_RPRN) // }
-#define FR_MDSH LA(FR_MINS) // —
+#define FR_RBRC LA(FR_RPAR) // }
+#define FR_MDSH LA(FR_MINUS) // —
 // Row 2
 #define FR_AE   LA(FR_A)    // Æ
 #define FR_CACI LA(FR_Z)    // Â
@@ -190,15 +190,15 @@
  */
 // Row 1
 #define FR_CYDI LS(LA(FR_AT))   // Ÿ
-#define FR_ACUT LS(LA(FR_AMPR)) // ´ (dead)
+#define FR_ACUT LS(LA(FR_AMPS)) // ´ (dead)
 #define FR_DLQU LS(LA(FR_LEAC)) // „
-#define FR_LBKT LS(LA(FR_LPRN)) // [
+#define FR_LBKT LS(LA(FR_LPAR)) // [
 #define FR_LARI LS(LA(FR_SECT)) // å
 #define FR_RDAQ LS(LA(FR_LEGR)) // »
 #define FR_CUCI LS(LA(FR_EXLM)) // Û
 #define FR_CAAC LS(LA(FR_LCCE)) // Á
-#define FR_RBKT LS(LA(FR_RPRN)) // ]
-#define FR_NDSH LS(LA(FR_MINS)) // –
+#define FR_RBKT LS(LA(FR_RPAR)) // ]
+#define FR_NDSH LS(LA(FR_MINUS)) // –
 // Row 2
 #define FR_CARI LS(LA(FR_Z))    // Å
 #define FR_SLQU LS(LA(FR_R))    // ‚
