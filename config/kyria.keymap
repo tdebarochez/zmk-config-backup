@@ -35,7 +35,7 @@
    &kp LCTRL     &kp FR_Z    &kp FR_X     &kp FR_C      &kp FR_V      &kp FR_B  &kp LSHFT &kp LSHFT   &kp LSHFT &kp LSHFT &kp FR_K   &kp FR_M     &kp FR_COMM  &kp FR_DOT &kp FR_SLSH &kp FR_MINUS
                                           &none         &kp LGUI      &kp LALT  &kp SPACE &kp SPACE   &kp RET   &kp RET   &mo LOWER  &kp BSPC     &none
                         >;
-												sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
+												sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN>;
 
                 };
                 lower_layer {
