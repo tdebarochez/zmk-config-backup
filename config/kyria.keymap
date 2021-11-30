@@ -33,7 +33,7 @@
    &lt RAISE ESC &kp FR_Q    &kp FR_W     &kp FR_F      &kp FR_P      &kp FR_G                                            &kp FR_J   &kp FR_L     &kp FR_U     &kp FR_Y   &kp FR_SCLN &kp FR_BSLS
    &mt LSHFT TAB &kp FR_A    &kp FR_R     &kp FR_S      &kp FR_T      &kp FR_D                                            &kp FR_H   &kp FR_N     &kp FR_E     &kp FR_I   &kp FR_O    &kp FR_QUOT
    &kp LCTRL     &kp FR_Z    &kp FR_X     &kp FR_C      &kp FR_V      &kp FR_B  &kp LSHFT &kp LSHFT   &kp LSHFT &kp LSHFT &kp FR_K   &kp FR_M     &kp FR_COMM  &kp FR_DOT &kp FR_SLSH &kp FR_MINUS
-                                          &none         &kp LGUI      &kp LALT  &kp SPACE &kp SPACE   &kp RET   &kp RET   &mo LOWER  &kp BSPC     &none
+                                          &kp C_MUTE    &kp LGUI      &kp LALT  &kp SPACE &kp SPACE   &kp RET   &kp RET   &mo LOWER  &kp BSPC     &none
                         >;
 			sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp C_BRI_UP C_BRI_DN>;
 
