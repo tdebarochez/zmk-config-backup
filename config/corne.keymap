@@ -15,6 +15,7 @@
 #define LOWER   1
 #define RAISE   2
 #define ADJUST  3
+#define NUM  4
 
 
 &mt {
@@ -97,12 +98,12 @@
 // |  |  &/1  |  é/2   |  "/3   |  '/4   |  (/5    |   |  §/6    |  è/7  |  !/8 |  ç/9 |  à/0 | )/° |
 // |  |       | Prev   | Play   | Next   | VolUp   |   | PG_UP   | LFT   | DWN  |  UP  | RGT  |     |
 // |  |       |        |        | Mute   | VolDn   |   | PG_DN   |       | ,    |  .   |  /   |  -  |
-//                     |        |        |         |   |         |       |      |
+//                     | NUM    |        |         |   |         |       |      |
                         bindings = <
    &none     &kp FR_AMPS &kp FR_LEAC    &kp FR_DQUO      &kp FR_QUOT  &kp FR_LPAR        &kp FR_SECT  &kp FR_LEGR  &kp FR_EXLM  &kp FR_LCCE &kp FR_LAGR &kp FR_RPAR
    &kp LSHFT &none       &kp C_PREVIOUS &kp C_PLAY_PAUSE &kp C_NEXT   &kp C_VOLUME_UP    &kp PG_UP    &kp LEFT     &kp DOWN     &kp UP      &kp RIGHT   &none
    &kp LCTRL &none       &none          &none            &kp C_MUTE   &kp C_VOLUME_DOWN  &kp PG_DN    &none        &kp FR_COMM  &kp FR_DOT  &kp FR_SLSH &kp FR_MINUS
-                                        &none            &none        &none              &none        &none        &none
+                                        &mo NUM          &none        &none              &none        &none        &none
                         >;
                 };
 
@@ -119,6 +120,22 @@
    &none  &rgb_ug RGB_TOG   &rgb_ug RGB_SAI &rgb_ug RGB_HUI &rgb_ug RGB_BRI &rgb_ug RGB_EFF  &rgb_ug RGB_TOG  &none  &none        &none       &none        &kp F12
    &none  &none             &rgb_ug RGB_SAD &rgb_ug RGB_HUD &rgb_ug RGB_BRD &rgb_ug RGB_EFR  &none            &none  &bt BT_PRV   &bt BT_NXT  &bt BT_CLR   &none
                                             &none           &none           &none            &none            &none  &none
+                        >;
+                };
+
+                num_layer {
+                        label = "num";
+
+// --------------------------------------------------------------------------------------------------
+// |  |  |  |  |  |  |   |     | è/7 | !/8 | ç/9 | + | - |
+// |  |  |  |  |  |  |   |  =  | '/4 | (/5 | §/6 | * | / |
+// |  |  |  |  |  |  |   | à/0 | &/1 | é/2 | "/3 | , | . |
+//             |  |  |   |     |     |     |     |
+                        bindings = <
+   &none     &none &none &none &none &none     &none        &kp FR_LEGR  &kp FR_EXLM  &kp FR_LCCE  &kp FR_PLUS  &kp FR_MINUS
+   &kp LSHFT &none &none &none &none &none     &kp FR_EQUAL &kp FR_QUOT  &kp FR_LPAR  &kp FR_SECT  &kp FR_ASTR  &kp FR_SLSH
+   &kp LCTRL &none &none &none &none &none     &kp FR_LAGR  &kp FR_AMPS  &kp FR_LEAC  &kp FR_DQUO  &kp FR_COMM  &kp FR_DOT
+                         &none &none &none     &none        &none        &none
                         >;
                 };
         };
