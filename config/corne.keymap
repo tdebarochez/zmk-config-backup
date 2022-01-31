@@ -130,12 +130,12 @@
 // |  |  |  |  |  |  |   |     | è/7 | !/8 | ç/9 | + | - |
 // |  |  |  |  |  |  |   |  =  | '/4 | (/5 | §/6 | * | / |
 // |  |  |  |  |  |  |   | à/0 | &/1 | é/2 | "/3 | , | . |
-//             |  |  |   |     |     |     |     |
+//             |  |  |   |     |     |     | DEL |
                         bindings = <
    &none     &none &none &none &none &none     &none        &kp FR_LEGR  &kp FR_EXLM  &kp FR_LCCE  &kp FR_PLUS  &kp FR_MINUS
    &kp LSHFT &none &none &none &none &none     &kp FR_EQUAL &kp FR_QUOT  &kp FR_LPAR  &kp FR_SECT  &kp FR_ASTR  &kp FR_SLSH
    &kp LCTRL &none &none &none &none &none     &kp FR_LAGR  &kp FR_AMPS  &kp FR_LEAC  &kp FR_DQUO  &kp FR_COMM  &kp FR_DOT
-                         &none &none &none     &none        &none        &none
+                         &none &none &none     &none        &none        &kp DEL
                         >;
                 };
         };
