@@ -62,16 +62,16 @@
                 default_layer {
                         label = "default";
 
-// -------------------------------------------------------------------------------------
-// | RSE/ESC  |  Q  |  W  |  F  |  P  |  G  |   |  J  |  L   |  U   |  Y  |  ;  |  \   |
-// | SHFT/TAB |  A  |  R  |  S  |  T  |  D  |   |  H  |  N   |  E   |  I  |  O  |  '   |
-// | CTRL     |  Z  |  X  |  C  |  V  |  B  |   |  N  |  M   |  ,   |  .  |  /  |  -   |
-//                        | GUI | ALT | SPC |   | ENT | LWR  | BKSP |
+// ------------------------------------------------------------------------------------------------------
+// | RSE/ESC  |  Q      |  W  |  F  |  P  |  G      |   |  J      |  L   |  U   |  Y  |  ;       |  \   |
+// | SHFT/TAB | SHFT/A  |  R  |  S  |  T  |  D      |   |  H      |  N   |  E   |  I  |  SHFT/O  |  '   |
+// | CTRL     | CTRL/Z  |  X  |  C  |  V  |  B      |   |  N      |  M   |  ,   |  .  |  CTRL//  |  -   |
+//                        | GUI | ALT | SPC/GUI |   | ENT/LWR | LWR  | BKSP |
                         bindings = <
-   &lt RAISE ESC &kp FR_Q    &kp FR_W     &kp FR_F      &kp FR_P      &kp FR_G      &kp FR_J   &kp FR_L     &kp FR_U     &kp FR_Y   &kp FR_SCLN &kp FR_BSLS
-   &mt LSHFT TAB &kp FR_A    &kp FR_R     &kp FR_S      &kp FR_T      &kp FR_D      &kp FR_H   &kp FR_N     &kp FR_E     &kp FR_I   &kp FR_O    &kp FR_QUOT
-   &kp LCTRL     &kp FR_Z    &kp FR_X     &kp FR_C      &kp FR_V      &kp FR_B      &kp FR_K   &kp FR_M     &kp FR_COMM  &kp FR_DOT &kp FR_SLSH &kp FR_MINUS
-                                          &kp LGUI      &kp LALT      &kp SPACE     &kp RET    &mo LOWER    &kp BSPC
+   &lt RAISE ESC &kp FR_Q          &kp FR_W     &kp FR_F      &kp FR_P      &kp FR_G         &kp FR_J       &kp FR_L     &kp FR_U     &kp FR_Y   &kp FR_SCLN       &kp FR_BSLS
+   &mt LSHFT TAB &mt LSHFT FR_A    &kp FR_R     &kp FR_S      &kp FR_T      &kp FR_D         &kp FR_H       &kp FR_N     &kp FR_E     &kp FR_I   &mt LSHFT FR_O    &kp FR_QUOT
+   &kp LCTRL     &mt LCTRL FR_Z    &kp FR_X     &kp FR_C      &kp FR_V      &kp FR_B         &kp FR_K       &kp FR_M     &kp FR_COMM  &kp FR_DOT &mt LCTRL FR_SLSH &kp FR_MINUS
+                                                &kp LGUI      &kp LALT      &mt LGUI SPACE   &lt LOWER RET  &mo LOWER    &kp BSPC
                         >;
 
                 };
